@@ -1,6 +1,8 @@
+title: test
+baseurl: "amirblaese.github.io"
 lsi: false
 safe: true
-source: [your repo's top level directory]
+source: DIR
 incremental: false
 highlighter: rouge
 gist:
