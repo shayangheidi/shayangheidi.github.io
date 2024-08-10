@@ -20,10 +20,12 @@
   }
 
   p{
-    padding-left: 15%;
-    padding-right: 30%;
+    margin-left: 10%;
+    margin-right: 15%;
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color:lightgray;
   }
 
   img {
@@ -51,20 +53,28 @@
 
   h1 {
     font-size: 2.8rem;
-    padding-left: 15%;
-    margin-top: 0;
+    margin-left: 10%;
+    margin-top: 5%;
     margin-bottom: 0;
+    color:coral;
 
   }
 
+  .links{
+    font-size:1.7rem;
+    display:flex;
+    grid-gap:40px;
+    margin-left: 10%;
+    margin-top: 30px;
+  }
 
 
   h2 {
     font-size: 2.3rem;
-    padding-left: 15%;
-    margin:0;
+    margin-left: 10%;
     margin-top:0;
     margin-bottom:0;
+    color:coral;
   }
   .main{
     display: flex;
@@ -72,7 +82,7 @@
   }
 
   ul{
-    padding-left: 15%;
+    margin-left: 10%;
     margin-top:10;
     font-size:1.5rem !important;
   }
@@ -80,23 +90,23 @@
 
 <body>
   <div style = "margin-top: 3%",class="main">
-    <h1 style="color:coral;line-height: 100px">
+    <h1>
       Shayan Gheidi 
     </h1>
   </div>
-  <h1>
-    <a style="font-size:1.7rem", href = https://scholar.google.com/citations?user=CFI_AHUAAAAJ&hl=en>  
+  <div class="links">
+    <a href = https://scholar.google.com/citations?user=CFI_AHUAAAAJ&hl=en>  
       Google Scholar 
     </a>
-    <a style="margin-left: 40px;font-size:1.7rem" href =https://www.linkedin.com/in/shayangheidi/>
+    <a href =https://www.linkedin.com/in/shayangheidi/>
     LinkedIn
   </a>
-  <a style="margin-left: 40px;font-size:1.7rem" href = https://github.com/amirblaese>
+  <a href = https://github.com/amirblaese>
     GitHub
   </a>
-</h1> 
+</div> 
 
-<p style="color:lightgray">
+<p>
   I am currently working as an Associate Data Scientist at <a href = https://www.euromonitor.com/usa>Euromonitor International</a>. Before this, I was an experimental condensed matter physics PhD student at Simon Fraser University's Department of Physics.
 
 </p>
@@ -113,7 +123,7 @@
   </li>
 </ul>
 
-<h2 style="color:coral;">Education</h2>
+<h2>Education</h2>
 <ul>
   <li>PhD, Physics at Simon Fraser University (April 2022)</li>
   <li>MSc, Physics at University of Toronto (September 2017)</li>
