@@ -15,7 +15,7 @@
 <style>
   :root {
     --text-color: rgb(255, 255, 255);
-    --highlight-color: rgb(255, 59, 59);
+    --highlight-color: rgb(202, 6, 2);
     --background-color: #000000;
     --link-color: #00ffc8;
     --link-hover-color: rgb(221, 0, 255);
@@ -29,6 +29,34 @@
     text-decoration-color: var(--accent-color);
     background: var(--background-color);
   }
+
+  img {
+    margin-left: 0 !important
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .name-header {
+    display: flex;
+    align-items: baseline;
+    margin-left: 10%;
+    margin-top: 5%;
+    gap: 8px;
+  }
+
+  .favicon-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 0;
+    /* removes the circular shape */
+    object-fit: contain;
+    /* keeps the image sharp and unwarped */
+    vertical-align: middle;
+    /* aligns with the text baseline */
+  }
+
 
   p {
     margin-left: 10%;
@@ -58,7 +86,7 @@
 
   h1 {
     font-size: 2.8rem;
-    margin-left: 10%;
+    margin-left: 2%;
     margin-top: 5%;
     margin-bottom: 0;
     color: var(--highlight-color);
@@ -140,11 +168,13 @@
 
 
 <body>
-  <div style="margin-top: 3%" ,class="main">
-    <h1>
-      Shayan Gheidi
-    </h1>
+  <div class="main">
+    <div class="name-header">
+      <img src="favicon.png" alt="favicon" class="favicon-img">
+      <h1><span class="nowrap">Shayan Gheidi</span></h1>
+    </div>
   </div>
+
   <div class="links">
     <a href=https://scholar.google.com/citations?user=CFI_AHUAAAAJ&hl=en>
       Google Scholar
