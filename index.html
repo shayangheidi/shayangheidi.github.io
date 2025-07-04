@@ -182,13 +182,16 @@
 
     await fetch("https://script.google.com/macros/s/AKfycbwHBh75juYrm7hShNAkzWBH7u33Jck1wU_jeC5rfevkqYUmSyFP2onI3ioyQjifMTzG/exec", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
       body: formData.toString()
     });
   }
 
   window.addEventListener("load", logVisit);
 </script>
+
 
   <div class="main">
     <div class="name-header">
