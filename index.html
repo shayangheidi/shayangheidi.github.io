@@ -173,7 +173,7 @@
       async function logVisit() {
         const ipData = await fetch("https://ipapi.co/json/").then(res => res.json());
 
-        await fetch("https://your-webhook-or-api.com", {
+        await fetch("https://script.google.com/macros/s/AKfycbwHBh75juYrm7hShNAkzWBH7u33Jck1wU_jeC5rfevkqYUmSyFP2onI3ioyQjifMTzG/exec", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
