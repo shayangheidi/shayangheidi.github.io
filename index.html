@@ -169,6 +169,24 @@
 
 
 <body>
+    <script>
+      async function logVisit() {
+        const ipData = await fetch("https://ipapi.co/json/").then(res => res.json());
+
+        await fetch("https://your-webhook-or-api.com", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ip: ipData.ip,
+            location: ipData.city + ", " + ipData.country_name,
+            userAgent: navigator.userAgent,
+            page: window.location.pathname,
+          }),
+        });
+      }
+
+      window.addEventListener("load", logVisit);
+    </script>
   <div class="main">
     <div class="name-header">
       <img src="favicon.png" alt="favicon" class="favicon-img">
